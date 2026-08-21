@@ -1,8 +1,7 @@
 # School Project Backend — native Node.js deployment (NOT Docker).
-# Render uses the Node.js buildpack automatically when no Dockerfile is present.
 services:
   - type: web
-    name: school-backend
+    name: school-backend-aur5
     runtime: node
     rootDir: .
     buildCommand: npm ci && npm run build
@@ -16,6 +15,3 @@ services:
         value: production
       - key: PORT
         value: 5000
-      # These must be set as Render secrets (not in this file):
-      # - JWT_SECRET
-      # - CLIENT_URL
