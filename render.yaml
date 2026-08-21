@@ -5,8 +5,8 @@ services:
     name: school-backend
     runtime: node
     rootDir: .
-    buildCommand: npm ci
-    startCommand: node server/index.cjs
+    buildCommand: npm ci && npm run build
+    startCommand: npm start
     healthCheckPath: /api/health
     scaling:
       minInstances: 1

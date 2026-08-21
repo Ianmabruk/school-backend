@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node server/index.cjs",
     "dev": "nodemon server/index.cjs",
-    "lint": "node --check server/index.cjs"
+    "lint": "node --check server/index.cjs",
+    "build": "node --check server/index.cjs"
   },
   "dependencies": {
     "bcryptjs": "^3.0.3",
